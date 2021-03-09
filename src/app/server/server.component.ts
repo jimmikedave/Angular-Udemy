@@ -5,5 +5,9 @@ import { Component } from "@angular/core";
     templateUrl: './server.component.html'
 })
 export class ServerComponent {
+    test = 'String Interpolation in ServerComponent'
 
+    getServerStatus() {
+        return this.test + 'with a method'
+    }
 }
